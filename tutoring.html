@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Signup | Hope Bridge Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="brand" href="index.html">Hope Bridge Foundation</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <div class="nav-item dropdown">
+                    <a class="dropbtn active" href="signup.html">Signup</a>
+                    <div class="dropdown-content">
+                        <a href="tutoring.html">Tutoring</a>
+                        <a href="volunteer.html">Volunteer</a>
+                        <a href="pricing.html">Pricing</a>
+                    </div>
+                </div>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h1>Tutoring Signup</h1>
+            <p>Request one-on-one or small-group tutoring in math, reading, science, and study skills. Our volunteer tutors offer personalized support for every learner.</p>
+            <form class="form-grid" action="#" method="post">
+                <input type="text" name="studentName" placeholder="Student Name" required>
+                <input type="email" name="parentEmail" placeholder="Parent / Guardian Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <select name="gradeLevel" required>
+                    <option value="">Grade Level</option>
+                    <option>Elementary</option>
+                    <option>Middle School</option>
+                    <option>High School</option>
+                    <option>Adult Learner</option>
+                </select>
+                <input type="text" name="subject" placeholder="Subject or Skill Area" required>
+                <textarea name="goals" placeholder="What are your tutoring goals?" required></textarea>
+                <button type="submit">Submit Tutoring Request</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

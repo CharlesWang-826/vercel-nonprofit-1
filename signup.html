@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Hope Bridge Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="brand" href="index.html">Hope Bridge Foundation</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <div class="nav-item dropdown">
+                    <a class="dropbtn active" href="signup.html">Signup</a>
+                    <div class="dropdown-content">
+                        <a href="tutoring.html">Tutoring</a>
+                        <a href="volunteer.html">Volunteer</a>
+                        <a href="pricing.html">Pricing</a>
+                    </div>
+                </div>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h1>Signup</h1>
+            <p>Choose the support you need or join our volunteer community. Select an option below to jump to the right signup form.</p>
+            <div class="subnav">
+                <a href="#tutoring">Tutoring</a>
+                <a href="#volunteer">Volunteer</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+        </section>
+
+        <section id="tutoring">
+            <h2>Tutoring Signup</h2>
+            <p>Request one-on-one or small-group tutoring in math, reading, science, and study skills. Our volunteer tutors offer personalized support for every learner.</p>
+            <form class="form-grid" action="#" method="post">
+                <input type="text" name="studentName" placeholder="Student Name" required>
+                <input type="email" name="parentEmail" placeholder="Parent / Guardian Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <select name="gradeLevel" required>
+                    <option value="">Grade Level</option>
+                    <option>Elementary</option>
+                    <option>Middle School</option>
+                    <option>High School</option>
+                    <option>Adult Learner</option>
+                </select>
+                <input type="text" name="subject" placeholder="Subject or Skill Area" required>
+                <textarea name="goals" placeholder="What are your tutoring goals?" required></textarea>
+                <button type="submit">Submit Tutoring Request</button>
+            </form>
+        </section>
+
+        <section id="volunteer">
+            <h2>Volunteer Signup</h2>
+            <p>Become a volunteer and support students through tutoring, event help, mentoring, or outreach. No prior experience is required.</p>
+            <form class="form-grid" action="#" method="post">
+                <input type="text" name="volunteerName" placeholder="Full Name" required>
+                <input type="email" name="volunteerEmail" placeholder="Email Address" required>
+                <input type="tel" name="volunteerPhone" placeholder="Phone Number" required>
+                <select name="availability" required>
+                    <option value="">Availability</option>
+                    <option>Weekdays</option>
+                    <option>Evenings</option>
+                    <option>Weekends</option>
+                    <option>Flexible</option>
+                </select>
+                <textarea name="experience" placeholder="Tell us about your experience and interests" required></textarea>
+                <button type="submit">Join as a Volunteer</button>
+            </form>
+        </section>
+
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <p>We keep our services affordable with free and sliding scale options. Choose the plan that fits your family, and contact us if you need additional support.</p>
+            <div class="grid grid-3">
+                <div class="pricing-card card">
+                    <h3>Basic Support</h3>
+                    <p><strong>$0</strong> per session</p>
+                    <p>Access group tutoring, homework help, and community resources.</p>
+                </div>
+                <div class="pricing-card card">
+                    <h3>Standard Package</h3>
+                    <p><strong>$25</strong> per session</p>
+                    <p>One-on-one tutoring, progress tracking, and individualized learning plans.</p>
+                </div>
+                <div class="pricing-card card">
+                    <h3>Family Plan</h3>
+                    <p><strong>$40</strong> per session</p>
+                    <p>Support for multiple students, workshops, and regular check-ins.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

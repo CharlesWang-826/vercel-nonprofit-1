@@ -3,325 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nonprofit Organization</title>
-    <style>
-        :root {
-            --primary: #2c6f8b;
-            --secondary: #f4a261;
-            --background: #f8f9fb;
-            --text: #1f2933;
-            --card: #ffffff;
-            --border: #d1d5db;
-        }
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background: var(--background);
-        }
-        header {
-            background: var(--primary);
-            color: white;
-            padding: 20px 16px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .container {
-            width: min(1100px, 100%);
-            margin: 0 auto;
-            padding: 24px 16px;
-        }
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-            margin-top: 12px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 8px 12px;
-            border-radius: 6px;
-            transition: background 0.2s ease;
-        }
-        nav a:hover {
-            background: rgba(255,255,255,0.16);
-        }
-        section {
-            margin: 40px 0;
-            padding: 24px;
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-        }
-        section h2 {
-            margin-top: 0;
-            color: var(--primary);
-        }
-        .grid {
-            display: grid;
-            gap: 24px;
-        }
-        .grid-3 {
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        }
-        .team-card,
-        .testimonial-card,
-        .faq-item,
-        .pricing-card {
-            background: #fff;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 18px;
-        }
-        .team-card img {
-            width: 100%;
-            border-radius: 12px;
-            object-fit: cover;
-            aspect-ratio: 4 / 3;
-            margin-bottom: 12px;
-        }
-        .form-grid {
-            display: grid;
-            gap: 16px;
-        }
-        input,
-        textarea,
-        select,
-        button {
-            width: 100%;
-            padding: 12px 14px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            font: inherit;
-        }
-        textarea {
-            min-height: 140px;
-            resize: vertical;
-        }
-        button {
-            background: var(--primary);
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background 0.2s ease;
-        }
-        button:hover {
-            background: #1e566f;
-        }
-        .progress-bar {
-            position: relative;
-            background: #e2e8f0;
-            border-radius: 12px;
-            overflow: hidden;
-            height: 28px;
-            margin-top: 12px;
-        }
-        .progress-bar span {
-            display: block;
-            height: 100%;
-            width: 68%;
-            background: var(--secondary);
-            color: #1f2933;
-            padding: 0 12px;
-            font-weight: bold;
-            line-height: 28px;
-        }
-        @media (max-width: 640px) {
-            header {
-                text-align: center;
-            }
-            nav {
-                justify-content: center;
-            }
-        }
-    </style>
+    <title>Home | Hope Bridge Foundation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Hope Bridge Foundation</h1>
-            <p>Supporting students, families, and communities through tutoring, volunteerism, and outreach.</p>
+            <a class="brand" href="index.html">Hope Bridge Foundation</a>
             <nav>
-                <a href="#about">About</a>
-                <a href="#mission">Mission</a>
-                <a href="#team">Team</a>
-                <a href="#tutoring">Tutoring</a>
-                <a href="#volunteer">Volunteer</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#donations">Donations</a>
-                <a href="#stories">Stories</a>
-                <a href="#faq">FAQ</a>
-                <a href="#contact">Contact</a>
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <div class="nav-item dropdown">
+                    <a class="dropbtn" href="signup.html">Signup</a>
+                    <div class="dropdown-content">
+                        <a href="tutoring.html">Tutoring</a>
+                        <a href="volunteer.html">Volunteer</a>
+                        <a href="pricing.html">Pricing</a>
+                    </div>
+                </div>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
-
     <main class="container">
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Hope Bridge Foundation is a nonprofit committed to empowering learners and strengthening communities. We provide free and low-cost tutoring, volunteer opportunities, and community programming designed to close achievement gaps and create lasting impact.</p>
-            <p><strong>Our values:</strong> compassion, equity, collaboration, and measurable progress.</p>
+        <section>
+            <h1>Welcome to Hope Bridge Foundation</h1>
+            <p>Building brighter futures through tutoring, volunteer support, and community investment. Explore our programs, meet our team, and see how you can get involved.</p>
         </section>
 
-        <section id="mission">
+        <section>
             <h2>Mission</h2>
-            <p>Our mission is to ensure every student has access to supportive academic guidance, mentoring, and resources to reach their full potential. We partner with families, schools, and volunteers to create a safe, welcoming learning environment for all.</p>
+            <p>Hope Bridge Foundation exists to provide equitable academic support and mentoring for students in need. We cultivate confidence, improve grades, and create long-term pathways to success through personalized learning and community collaboration.</p>
             <ul>
-                <li>Provide tutoring that builds confidence and skills.</li>
+                <li>Offer accessible tutoring for learners of all ages.</li>
                 <li>Engage volunteers in meaningful service.</li>
-                <li>Track outcomes to improve student success.</li>
-                <li>Expand access through donations and community support.</li>
+                <li>Partner with families and schools for measurable progress.</li>
             </ul>
         </section>
 
-        <section id="team">
-            <h2>Meet the Team</h2>
-            <div class="grid grid-3">
-                <div class="team-card">
-                    <img src="https://via.placeholder.com/300x225?text=Team+Member" alt="Team Member Photo">
-                    <h3>Jordan Adams</h3>
-                    <p>Executive Director</p>
-                    <p>Jordan leads Hope Bridge with a focus on student success, community partnerships, and program growth.</p>
-                </div>
-                <div class="team-card">
-                    <img src="https://via.placeholder.com/300x225?text=Team+Member" alt="Team Member Photo">
-                    <h3>Sofia Patel</h3>
-                    <p>Program Manager</p>
-                    <p>Sofia coordinates tutoring sessions, volunteer placement, and curriculum development for learners.</p>
-                </div>
-                <div class="team-card">
-                    <img src="https://via.placeholder.com/300x225?text=Team+Member" alt="Team Member Photo">
-                    <h3>Marcus Lee</h3>
-                    <p>Community Outreach</p>
-                    <p>Marcus builds relationships with schools, donors, and community groups to expand our reach.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="tutoring">
-            <h2>Tutoring Signup</h2>
-            <p>Sign up for one-on-one or small-group tutoring tailored to your student’s needs. Our tutors are trained volunteers who specialize in reading, math, science, and study skills.</p>
-            <form class="form-grid" action="#" method="post">
-                <input type="text" name="studentName" placeholder="Student Name" required>
-                <input type="email" name="parentEmail" placeholder="Parent / Guardian Email" required>
-                <input type="tel" name="phone" placeholder="Phone Number" required>
-                <select name="gradeLevel" required>
-                    <option value="">Grade Level</option>
-                    <option>Elementary</option>
-                    <option>Middle School</option>
-                    <option>High School</option>
-                    <option>Adult Learner</option>
-                </select>
-                <input type="text" name="subject" placeholder="Subject or Skill Area" required>
-                <textarea name="goals" placeholder="What are your tutoring goals?" required></textarea>
-                <button type="submit">Submit Tutoring Request</button>
-            </form>
-        </section>
-
-        <section id="volunteer">
-            <h2>Volunteer Signup</h2>
-            <p>Join our volunteer team and make a difference through tutoring, event support, mentorship, or community outreach.</p>
-            <form class="form-grid" action="#" method="post">
-                <input type="text" name="volunteerName" placeholder="Full Name" required>
-                <input type="email" name="volunteerEmail" placeholder="Email Address" required>
-                <input type="tel" name="volunteerPhone" placeholder="Phone Number" required>
-                <select name="availability" required>
-                    <option value="">Availability</option>
-                    <option>Weekdays</option>
-                    <option>Evenings</option>
-                    <option>Weekends</option>
-                    <option>Flexible</option>
-                </select>
-                <textarea name="experience" placeholder="Tell us about your experience and interests" required></textarea>
-                <button type="submit">Join as a Volunteer</button>
-            </form>
-        </section>
-
-        <section id="pricing">
-            <h2>Pricing</h2>
-            <p>We offer sliding scale tutoring fees and free services based on need. Our goal is affordability for every family.</p>
-            <div class="grid grid-3">
-                <div class="pricing-card">
-                    <h3>Basic Support</h3>
-                    <p><strong>$0</strong> per session</p>
-                    <p>Access to group tutoring, homework help, and resource referrals.</p>
-                </div>
-                <div class="pricing-card">
-                    <h3>Standard Package</h3>
-                    <p><strong>$25</strong> per session</p>
-                    <p>Personalized one-on-one tutoring and progress planning.</p>
-                </div>
-                <div class="pricing-card">
-                    <h3>Family Plan</h3>
-                    <p><strong>$40</strong> per session</p>
-                    <p>Multi-student support, workshops, and regular success check-ins.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="donations">
-            <h2>Donation Tracker</h2>
-            <p>Help us reach our next goal to keep tutoring affordable and expand programs. Every gift supports students, volunteers, and community events.</p>
-            <p><strong>Goal:</strong> $30,000</p>
-            <p><strong>Raised:</strong> $20,400</p>
-            <div class="progress-bar">
-                <span>68% Funded</span>
-            </div>
-        </section>
-
-        <section id="stories">
+        <section>
             <h2>Success Stories</h2>
             <div class="grid grid-3">
-                <div class="testimonial-card">
-                    <h3>Emma, Student</h3>
-                    <p>“The tutoring program helped me improve my math grade and feel confident in class. My tutor was patient and encouraging.”</p>
+                <div class="card">
+                    <h3>Emma’s Progress</h3>
+                    <p>Emma raised her math grade from a C to an A after weekly tutoring sessions. Her confidence and classroom participation improved dramatically.</p>
                 </div>
-                <div class="testimonial-card">
-                    <h3>Mr. Johnson, Parent</h3>
-                    <p>“Our family was able to access support when we needed it most. The volunteer team made learning fun and easy to follow.”</p>
+                <div class="card">
+                    <h3>A Parent’s Perspective</h3>
+                    <p>“The support our family received made all the difference. Our child enjoyed learning again and felt supported every step of the way.”</p>
                 </div>
-                <div class="testimonial-card">
-                    <h3>Leah, Volunteer</h3>
-                    <p>“Volunteering here has been a rewarding way to give back. I’ve seen students grow, and I’ve grown too.”</p>
+                <div class="card">
+                    <h3>Volunteer Impact</h3>
+                    <p>“Volunteering at Hope Bridge has been one of the most rewarding experiences of my life. I love seeing students grow and succeed.”</p>
                 </div>
             </div>
         </section>
 
-        <section id="faq">
-            <h2>FAQ</h2>
-            <div class="faq-item">
-                <h3>Do you offer financial assistance?</h3>
-                <p>Yes. We provide free tutoring and sliding scale pricing for families who qualify. Contact us to share your needs.</p>
+        <section>
+            <h2>Donation Tracker</h2>
+            <p>Our current fundraising goal supports expanded tutoring, materials, and volunteer training. Donations help us reach more students in our community.</p>
+            <div class="progress-card card">
+                <p><strong>Goal:</strong> $30,000</p>
+                <p><strong>Raised:</strong> $20,400</p>
+                <div class="progress-bar"><span>68% Funded</span></div>
             </div>
-            <div class="faq-item">
-                <h3>How do I sign up a student?</h3>
-                <p>Use the Tutoring Signup form above or contact our team directly. We will follow up to schedule your first session.</p>
-            </div>
-            <div class="faq-item">
-                <h3>What volunteer roles are available?</h3>
-                <p>We welcome tutors, mentors, event helpers, administrative support, and outreach volunteers. No prior experience is required.</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Have questions or want to partner with us? Send a message and our team will get back to you soon.</p>
-            <form class="form-grid" action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="subject" placeholder="Subject" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <p style="margin-top: 16px;"><strong>Email:</strong> info@hopebridge.org<br><strong>Phone:</strong> (555) 123-4567</p>
         </section>
     </main>
 </body>
